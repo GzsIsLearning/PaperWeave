@@ -1,7 +1,7 @@
 # Paperweave 
-
-![logo](assets/logo.png)
-
+<div align="center">
+<img src=assets/logo.svg width="15%"/>
+</div>
 **🤖👤 For Both**
 
 > **Paperweave is an AI Agent-oriented academic literature knowledge base system — turn papers into a queryable, evolvable, collaborative knowledge graph.**
