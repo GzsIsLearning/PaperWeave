@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+pyyaml
+requests
+python-dotenv
+markdown-it-py
+Pillow
+tqdm

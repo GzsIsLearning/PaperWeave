@@ -1,0 +1,29 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite
+*.sqlite.*
+
+# Locks & backups
+*.lock
+*.bak
+*.journal
+
+# Paperweave runtime state
+.chat-sessions.json
+.stars.json
+.trigger_ingest
