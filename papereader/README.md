@@ -6,6 +6,8 @@
 
 Papereader is the Web reading frontend for the Paperweave knowledge base, providing full-text paper browsing, translation, Agent discussion, annotation highlighting, and more.
 
+![Papereader Preview](../assets/reader-preview.png)
+
 ## How to Start
 
 **👤 For Human**

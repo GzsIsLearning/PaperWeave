@@ -1,5 +1,7 @@
 # Paperweave 
 
+![logo](assets/logo.png)
+
 **🤖👤 For Both**
 
 > **Paperweave is an AI Agent-oriented academic literature knowledge base system — turn papers into a queryable, evolvable, collaborative knowledge graph.**
@@ -48,6 +50,10 @@ arxiv.org/abs/2304.08485
        ▼
    Deep read in Reader: highlight key passages → Chat with specific questions → translate dense sentences
 ```
+
+![Papereader Preview](assets/reader-preview.png)
+
+*The Papereader web interface — three-panel layout: left sidebar for paper navigation and knowledge graph browsing, center for full-text reading with annotation highlighting, right for AI chat and instant translation. Supports bilingual reading, Agent-assisted Q&A, and markdown export.*
 
 ---
 

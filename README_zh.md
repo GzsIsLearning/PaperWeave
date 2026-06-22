@@ -1,5 +1,7 @@
 # Paperweave 
 
+![logo](assets/logo.png)
+
 **🤖👤 For Both**
 
 > **Paperweave 是一个面向 AI Agent 的学术文献知识库系统——把论文变成可查询、可演化、可协作的知识图谱。**
@@ -48,6 +50,10 @@ arxiv.org/abs/2304.08485
        ▼
    Reader 里精读：高亮关键段落 → Chat 问具体问题 → 翻译晦涩句式
 ```
+
+![Papereader 预览](assets/reader-preview.png)
+
+*Papereader 网页阅读器界面 — 三栏布局：左侧论文导航与知识图谱浏览，中间全文精读与标注高亮，右侧 AI 对话与即时翻译。支持双语阅读、Agent 辅助问答、Markdown 导出。*
 
 ---
 
