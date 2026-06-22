@@ -4,13 +4,11 @@
 <img src=assets/logo.svg width="15%"/>
 </div>
 
-> **Paperweave 是一个面向 AI Agent 的学术文献知识库系统——把论文变成可查询、可演化、可协作的知识图谱。**
+> **Paperweave 是一个学术文献知识库系统——把论文变成可查询、可演化、可协作的知识图谱。**
 
 ---
 
 ## Paperweave 做什么
-
-**👤 For Human**
 
 - **结构化知识图谱** — 5 层知识模型，从原始论文到出版策略全覆盖
 - **全文精读阅读器** — 带 LLM 翻译 / chat / 高亮 / 星标的 Web Reader
@@ -20,8 +18,6 @@
 ---
 
 ## 一个具体例子
-
-**👤 For Human**
 
 你把一篇 arXiv 论文拖进来，它：
 
@@ -57,29 +53,29 @@ arxiv.org/abs/2304.08485
 
 ---
 
-## Agent-First 安装
+## 快速开始
 
-**🤖 For Agent**
-
-```bash
-git clone https://github.com/nousresearch/paperweave-v1.git && cd paperweave-v1 && python3 -m venv .venv && source .venv/bin/activate && pip install -r papereader/requirements.txt && cp papereader/.env.example .env
-```
-
-安装完成后，编辑 `.env` 填入 API keys，然后：
+安装并启动 Web Reader：
 
 ```bash
-cd papereader && bash start.sh          # 启动阅读器服务器
-python skills/paper-agent/agent.py ingest --arxiv <id>  # 摄入论文
-python skills/paper-agent/agent.py review <slug>       # 自动阅读 + review
+git clone https://github.com/GzsIsLearning/PaperWeave.git && cd PaperWeave
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r papereader/requirements.txt
+cp papereader/.env.example .env    # 编辑 .env 填入 API keys
+
+cd papereader && bash start.sh     # 访问 http://localhost:8899
 ```
 
-> 详细构建指南请参阅 [docs/BUILD.md](./docs/BUILD.md)
+**前提条件：**
+- Python 3.10+
+- MinerU API key（用于 PDF 提取）：在 `.env` 中设置 `MINERU_TOKEN`
+- （可选）Zotero SQLite 用于去重
+
+> 完整环境配置请参阅 [docs/BUILD.md](./docs/BUILD.md)
 
 ---
 
-## 架构概览：五层知识模型
-
-**👤 For Human**
+## 五层知识模型
 
 ```
                          ┌──────────────────────────┐
@@ -112,39 +108,18 @@ python skills/paper-agent/agent.py review <slug>       # 自动阅读 + review
 
 ---
 
-## 快速开始
-
-**👤 For Human**
-
-```bash
-# 启动 Web Reader
-cd papereader && bash start.sh
-# 浏览器访问 http://localhost:8899
-```
-
-**前提条件：**
-- Python 3.10+
-- MinerU API key（PDF 提取）：在 `.env` 中设置 `MINERU_TOKEN`
-- （可选）Zotero SQLite 用于去重
-
----
-
-## 文档索引
-
-**🤖👤 For Both**
+## 快速导航
 
 | 文档 | 内容 |
 |------|------|
-| [docs/SPEC.md](./docs/SPEC.md) | Paperweave Protocol v1.0 — 五层知识模型、文件格式、API 契约、摄取流水线、Agent 交互标准 |
-| [docs/AGENTS.md](./docs/AGENTS.md) | AI Agent 操作手册 — 如何克隆、配置、启动、摄入论文、自动 review、常见故障排除 |
-| [docs/GUIDE.md](./docs/GUIDE.md) | 完整用户指南 — 阅读流程、论文摄入、L2/L3 页面构建、自动化 cron |
+| [docs/SPEC.md](./docs/SPEC.md) | Paperweave Protocol v1.0 — 五层知识模型、文件格式、API 契约、摄取流水线 |
+| [docs/AGENTS.md](./docs/AGENTS.md) | AI Agent 操作手册 — 克隆、配置、启动、摄入论文、自动 review |
+| [docs/GUIDE.md](./docs/GUIDE.md) | 完整用户指南 — 阅读流程、论文摄入、L2/L3 页面构建 |
 | [docs/BUILD.md](./docs/BUILD.md) | 完整构建指南 — 从零搭建环境、配置、运行、测试 |
 
 ---
 
 ## 目录结构
-
-**🤖👤 For Both**
 
 ```
 paperweave-v1/
