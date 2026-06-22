@@ -1,8 +1,8 @@
 # Paperweave 
 
-![logo](assets/logo.png)
-
-**🤖👤 For Both**
+<div align="center">
+<img src=assets/logo.svg width="15%"/>
+</div>
 
 > **Paperweave 是一个面向 AI Agent 的学术文献知识库系统——把论文变成可查询、可演化、可协作的知识图谱。**
 
